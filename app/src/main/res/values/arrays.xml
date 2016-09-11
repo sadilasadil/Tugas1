@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="alatmusik">
+        <item>Pilih Alat Musik yang Anda Kuasai</item>
+        <item>Gitar</item>
+        <item>Piano/Keyboard</item>
+        <item>Drum</item>
+    </string-array>
+</resources>
