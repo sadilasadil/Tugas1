@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string-array name="alatmusik">
-        <item>Pilih Alat Musik yang Anda Kuasai</item>
-        <item>Gitar</item>
-        <item>Piano/Keyboard</item>
-        <item>Drum</item>
+    <string-array name="Kota">
+        <item>Pilih kota seleksi</item>
+        <item>Jakarta</item>
+        <item>Surabaya</item>
+        <item>Semarang</item>
+        <item>Yogjakarta</item>
+        <item>Bali</item>
     </string-array>
 </resources>
