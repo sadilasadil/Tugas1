@@ -4,17 +4,19 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
+import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.RadioButton;
+import android.widget.Spinner;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
     EditText etNama;
     Button bDaftar;
-    TextView tvHasil, tvHasil2; //tvHasil3, tvHasil4;
+    TextView tvHasil, tvHasil2, tvHasil3, tvHasil4;
     RadioButton rbMale, rbFemale;
-    //CheckBox cbM, cbD, cbBAM;
-    //Spinner sK;
+    CheckBox cbM, cbD, cbBAM;
+    Spinner sK;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,12 +29,12 @@ public class MainActivity extends AppCompatActivity {
         rbFemale = (RadioButton) findViewById(R.id.radioButton2);
         rbMale = (RadioButton) findViewById(R.id.radioButton);
         tvHasil2 = (TextView) findViewById(R.id.textView);
-        /*cbM = (CheckBox) findViewById(R.id.checkBox);
+        cbM = (CheckBox) findViewById(R.id.checkBox);
         cbD = (CheckBox) findViewById(R.id.checkBox2);
         cbBAM = (CheckBox) findViewById(R.id.checkBox3);
         tvHasil3 = (TextView) findViewById(R.id.textView6);
         sK = (Spinner) findViewById(R.id.spinner);
-        tvHasil4 = (TextView) findViewById(R.id.textView7);*/
+        tvHasil4 = (TextView) findViewById(R.id.textView7);
 
         bDaftar.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -56,8 +58,8 @@ public class MainActivity extends AppCompatActivity {
         } else {
             tvHasil2.setText("\nGender : " + hasil2);
         }
-    }
-        /*String hasil3 = "Keahlian : ";
+
+        String hasil3 = "Keahlian : ";
         int startlen = hasil3.length();
         if (cbM.isChecked()) hasil3 += cbM.getText() + "\n";
         if (cbD.isChecked()) hasil3 += cbD.getText() + "\n";
@@ -67,7 +69,7 @@ public class MainActivity extends AppCompatActivity {
         tvHasil3.setText(hasil3);
 
         tvHasil4.setText("Anda akan melakukan seleksi di kota : " + sK.getSelectedItem().toString());
-    }*/
+    }
 
     private void doProcess() {
         if (isValid()) {
