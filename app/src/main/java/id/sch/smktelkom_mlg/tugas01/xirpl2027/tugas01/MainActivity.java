@@ -4,19 +4,16 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
-import android.widget.CheckBox;
 import android.widget.EditText;
-import android.widget.RadioButton;
-import android.widget.Spinner;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
     EditText etNama;
     Button bDaftar;
-    TextView tvHasil, tvHasil2, tvHasil3, tvHasil4;
-    RadioButton rbMale, rbFemale;
-    CheckBox cbM, cbD, cbBAM;
-    Spinner sK;
+    TextView tvHasil; //tvHasil2, tvHasil3, tvHasil4;
+    //RadioButton rbMale, rbFemale;
+    //CheckBox cbM, cbD, cbBAM;
+    //Spinner sK;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
         etNama = (EditText) findViewById(R.id.editText);
         bDaftar = (Button) findViewById(R.id.button);
         tvHasil = (TextView) findViewById(R.id.textView4);
-        rbFemale = (RadioButton) findViewById(R.id.radioButton2);
+        /*rbFemale = (RadioButton) findViewById(R.id.radioButton2);
         rbMale = (RadioButton) findViewById(R.id.radioButton);
         tvHasil2 = (TextView) findViewById(R.id.textView);
         cbM = (CheckBox) findViewById(R.id.checkBox);
@@ -34,18 +31,18 @@ public class MainActivity extends AppCompatActivity {
         cbBAM = (CheckBox) findViewById(R.id.checkBox3);
         tvHasil3 = (TextView) findViewById(R.id.textView6);
         sK = (Spinner) findViewById(R.id.spinner);
-        tvHasil4 = (TextView) findViewById(R.id.textView7);
+        tvHasil4 = (TextView) findViewById(R.id.textView7);*/
 
         bDaftar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 doProcess();
-                doClick();
+                //doClick();
             }
         });
     }
 
-    private void doClick() {
+    /*private void doClick() {
         String hasil2 = null;
 
         if (rbMale.isChecked()) {
@@ -68,7 +65,7 @@ public class MainActivity extends AppCompatActivity {
         tvHasil3.setText(hasil3);
 
         tvHasil4.setText("Anda akan melakukan seleksi di kota : " + sK.getSelectedItem().toString());
-    }
+    }*/
 
     private void doProcess() {
         if (isValid()) {
